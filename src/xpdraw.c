@@ -15,11 +15,14 @@
     Alles was zum Zeichnen in XP gehört initialisieren
 
     ======================================================================= */
-void xpdraw_init(void)
+void xpdraw_init( void )
 {
-    xpdraw_registerCB();
-    xpopengl_init();
-    xpdraw_registerPrepareScene( xpscene_prepare_triangle);
+    xpdraw_registerCB( );
+    xpopengl_init( );
+
+    /* die beiden Funktionen müssen dem Anwendungsfall nach registriert werden */
+    xpdraw_registerPrepareScene( xpscene_prepare_triangle );
+    xpdraw_registerDrawScene( xpscene_draw_triangle );
 
 } // xpdraw_registerCB
 
@@ -30,13 +33,13 @@ void xpdraw_init(void)
     Zeichen Callback bei XPlane anmelden
 
     ======================================================================= */
-void xpdraw_registerCB(void)
+void xpdraw_registerCB( void )
 {
 
-    XPLMRegisterDrawCallback(   xpdraw_CB, 
-                                xplm_Phase_Objects,
-                                0,
-                                NULL );
+    XPLMRegisterDrawCallback( xpdraw_CB, 
+                              xplm_Phase_Objects,
+                              0,
+                              NULL );
 } /* xpdraw_registerCB */
 
 /*  =======================================================================
@@ -60,7 +63,8 @@ int xpdraw_CB(  XPLMDrawingPhase inPhase,
         return 1;
     }
 
-    xpscene_draw_triangle();
+    (*xpdraw_DrawSceneCB)();
+    //xpscene_draw_triangle();
 
     return 1;
 } /* xpdraw_CB */
@@ -79,3 +83,19 @@ void xpdraw_registerPrepareScene( void (*f)( void ))
 {
     xpdraw_PrepareSceneCB = f;
 } // xpdraw_registerPrepareScene
+
+
+/*  =======================================================================
+
+    xpdraw_registerDrawScene
+
+    sobald möglich die OpenGL Befehle in einer Funktion f ausführen, die
+    OpenGL Objekte etc. anlegt. Diese Funktion wir nur einmal bei ersten Aufruf
+    der Draw Callback verwendet
+
+
+    ======================================================================= */
+void xpdraw_registerDrawScene( void (*f)( void ))
+{
+    xpdraw_DrawSceneCB = f;
+} // xpdraw_registerDrawScen

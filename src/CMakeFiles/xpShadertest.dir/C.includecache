@@ -6,6 +6,30 @@
 
 #IncludeRegexTransform: 
 
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDefs.h
+windows.h
+-
+stdint.h
+-
+
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDisplay.h
+XPLMDefs.h
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDefs.h
+
+/home/peter/Programming/xplane/xpshader/src/xpdraw.c
+stdio.h
+-
+xpdraw.h
+/home/peter/Programming/xplane/xpshader/src/xpdraw.h
+xpopengl.h
+/home/peter/Programming/xplane/xpshader/src/xpopengl.h
+xpscene.h
+/home/peter/Programming/xplane/xpshader/src/xpscene.h
+
+/home/peter/Programming/xplane/xpshader/src/xpdraw.h
+XPLMDisplay.h
+/home/peter/Programming/xplane/xpshader/src/XPLMDisplay.h
+
 /home/peter/Programming/xplane/xpshader/src/xpopengl.h
 GL/glew.h
 -
@@ -13,10 +37,6 @@ GL/gl.h
 -
 GL/glu.h
 -
-
-/home/peter/Programming/xplane/xpshader/src/xpscene.c
-xpscene.h
-/home/peter/Programming/xplane/xpshader/src/xpscene.h
 
 /home/peter/Programming/xplane/xpshader/src/xpscene.h
 xpopengl.h
