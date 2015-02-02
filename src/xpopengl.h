@@ -1,0 +1,32 @@
+#ifndef XPOPENGL_H
+#define XPOPENGL_H
+
+#include <GL/glew.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
+
+#define XPOPENGL_VSHADER_FILE "./Resources/plugins/vshader.sha"
+#define XPOPENGL_FSHADER_FILE "./Resources/plugins/fshader.sha"
+
+static GLuint XPOpenGL_Vshader, XPOpenGL_Fshader;
+static GLuint XPOpenGL_ShaderProgram;
+
+void xpopengl_printProgInfo(GLuint prog);
+void xpopengl_printGLErrors(void);
+void xpopengl_init(void);
+void xpopengl_destroy(void);
+int xpopengl_num_of_extensions(void);
+void xpopengl_print_extensions(void);
+GLuint xpopengl_getShaderProgram(void);
+
+#else
+extern void xpopengl_printProgInfo(GLuint prog);
+extern void xpopengl_printGLErrors(void);
+extern void xpopengl_init(void);
+extern void xpopengl_destroy(void);
+extern int xpopengl_num_of_extensions(void);
+extern void xpopengl_print_extensions(void);
+extern GLuint xpopengl_getShaderProgram(void);
+#endif // XPOPENGL_H
+
+#define BUFFER_OFFSET(i) ((void*)(i))

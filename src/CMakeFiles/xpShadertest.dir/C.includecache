@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/peter/Programming/xplane/xpshader/src/xpopengl.h
+GL/glew.h
+-
+GL/gl.h
+-
+GL/glu.h
+-
+
+/home/peter/Programming/xplane/xpshader/src/xpscene.c
+xpscene.h
+/home/peter/Programming/xplane/xpshader/src/xpscene.h
+
+/home/peter/Programming/xplane/xpshader/src/xpscene.h
+xpopengl.h
+/home/peter/Programming/xplane/xpshader/src/xpopengl.h
+stdio.h
+-
+
