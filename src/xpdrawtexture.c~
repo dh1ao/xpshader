@@ -1,9 +1,0 @@
-void prepare(void)
-{
-	puts("Prepare");
-}
-
-void draw(void)
-{
-	puts("Draw");
-}
