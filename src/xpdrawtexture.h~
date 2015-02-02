@@ -1,2 +1,0 @@
-void prepare(void);
-void draw(void);
