@@ -12,11 +12,13 @@ static GLuint vao = -1;
 
 void xpscene_prepare_triangle( void );
 void xpscene_draw_triangle( void );
+void xpscene_draw_hello( void );
 
 #else
 
 extern void xpscene_prepare_triangle( void );
 extern void xpscene_draw_triangle( void );
+extern void xpscene_draw_hello( void );
 
 #endif // XPSCENE_H
 

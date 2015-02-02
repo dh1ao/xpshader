@@ -95,3 +95,21 @@ void xpscene_draw_triangle( void )
     
     return;
 } // xpscene_draw_triangle
+
+/*  =======================================================================
+
+    xpscene_draw_hello
+
+    HELLO in das Terminal schreiben
+
+    ======================================================================= */
+
+void xpscene_draw_hello( void )
+{
+
+    puts( "HELLO" );
+    glUseProgram(0);
+    glBindVertexArray(0);
+    
+    return;
+} // xpscene_draw_hello

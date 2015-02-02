@@ -23,12 +23,16 @@ xpdraw.h
 /home/peter/Programming/xplane/xpshader/src/xpdraw.h
 xpopengl.h
 /home/peter/Programming/xplane/xpshader/src/xpopengl.h
-xpscene.h
-/home/peter/Programming/xplane/xpshader/src/xpscene.h
+xpinterface.h
+/home/peter/Programming/xplane/xpshader/src/xpinterface.h
 
 /home/peter/Programming/xplane/xpshader/src/xpdraw.h
 XPLMDisplay.h
 /home/peter/Programming/xplane/xpshader/src/XPLMDisplay.h
+
+/home/peter/Programming/xplane/xpshader/src/xpinterface.h
+xpscene.h
+/home/peter/Programming/xplane/xpshader/src/xpscene.h
 
 /home/peter/Programming/xplane/xpshader/src/xpopengl.h
 GL/glew.h

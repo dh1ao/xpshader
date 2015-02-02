@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "xpdraw.h"
 #include "xpopengl.h"
-#include "xpscene.h"
+//#include "xpscene.h"        // hier das Headerfile der eigenen Perpare/Draw Funktionen
+#include "xpinterface.h"    // hier hinein die Funktionsnamen für Prepare/Draw
 /*
     Alles, was zum Zeichnen in XPlane gehört soll hierhin
     inkl. OpenGL Funktionen
@@ -21,8 +22,8 @@ void xpdraw_init( void )
     xpopengl_init( );
 
     /* die beiden Funktionen müssen dem Anwendungsfall nach registriert werden */
-    xpdraw_registerPrepareScene( xpscene_prepare_triangle );
-    xpdraw_registerDrawScene( xpscene_draw_triangle );
+    xpdraw_registerPrepareScene( XPDRAW_PREPARE_CB );
+    xpdraw_registerDrawScene( XPDRAW_DRAW_CB );
 
 } // xpdraw_registerCB
 
@@ -64,7 +65,6 @@ int xpdraw_CB(  XPLMDrawingPhase inPhase,
     }
 
     (*xpdraw_DrawSceneCB)();
-    //xpscene_draw_triangle();
 
     return 1;
 } /* xpdraw_CB */

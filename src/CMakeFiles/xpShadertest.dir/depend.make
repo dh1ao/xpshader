@@ -5,6 +5,7 @@ src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: /home/peter/Programming/xplane/sdk/C
 src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: /home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDisplay.h
 src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: src/xpdraw.c
 src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: src/xpdraw.h
+src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: src/xpinterface.h
 src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: src/xpopengl.h
 src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: src/xpscene.h
 
