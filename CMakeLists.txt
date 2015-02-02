@@ -10,11 +10,15 @@ set(
     )
 
 set(XP_SDK_INCLUDE_DIR
-    /home/peter/Programming/xplane/sdk/CHeaders/XPLM/
+    /home/markus/Programming/XPLM
     )
 
-SET(COPY_TO_PATH /home/peter/xp10/Resources/plugins)
-include_directories(${XP_SDK_INCLUDE_DIR})
+SET(COPY_TO_PATH /media/markus/XPlane_SSD/X-Plane\ 10/Resources/plugins)
+include_directories(${XP_SDK_INCLUDE_DIR} /usr/include)
 
 add_definitions(-DLIN=1)
 
+file(GLOB MY_PUBLIC_SHADERS
+  "build/*.gsls"
+)
+file(COPY ${MY_PUBLIC_SHADERS} DESTINATION ${COPY_TO_PATH})
