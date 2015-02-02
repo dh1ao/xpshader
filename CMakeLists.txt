@@ -19,6 +19,6 @@ include_directories(${XP_SDK_INCLUDE_DIR} /usr/include)
 add_definitions(-DLIN=1)
 
 file(GLOB MY_PUBLIC_SHADERS
-  "build/*.gsls"
+  "build/*.glsl"
 )
 file(COPY ${MY_PUBLIC_SHADERS} DESTINATION ${COPY_TO_PATH})

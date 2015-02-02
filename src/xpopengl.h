@@ -5,8 +5,8 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 
-#define XPOPENGL_VSHADER_FILE "./Resources/plugins/vshader.gsls"
-#define XPOPENGL_FSHADER_FILE "./Resources/plugins/fshader.gsls"
+#define XPOPENGL_VSHADER_FILE "./Resources/plugins/vshader.glsl"
+#define XPOPENGL_FSHADER_FILE "./Resources/plugins/fshader.glsl"
 
 static GLuint XPOpenGL_Vshader, XPOpenGL_Fshader;
 static GLuint XPOpenGL_ShaderProgram;
