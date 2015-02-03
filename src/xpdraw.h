@@ -6,8 +6,8 @@
 #endif
 
 static xpdraw_VertexBuffer;
-static void (*xpdraw_PrepareSceneCB)(void);
-static void (*xpdraw_DrawSceneCB)(void);
+static void (*xpdraw_PrepareSceneCB)(void) = NULL;
+static void (*xpdraw_DrawSceneCB)(void) = NULL;
 
 void xpdraw_init(void);
 void xpdraw_registerCB(void);

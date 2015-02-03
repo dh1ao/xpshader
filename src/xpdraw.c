@@ -60,11 +60,13 @@ int xpdraw_CB(  XPLMDrawingPhase inPhase,
     if( first_call ) 
     {
         first_call = 0;
-        (*xpdraw_PrepareSceneCB)();
+        if( xpdraw_PrepareSceneCB != NULL )
+            ( *xpdraw_PrepareSceneCB )( );
         return 1;
     }
 
-    (*xpdraw_DrawSceneCB)();
+    if( xpdraw_DrawSceneCB != NULL )
+        ( *xpdraw_DrawSceneCB )( );
 
     return 1;
 } /* xpdraw_CB */
