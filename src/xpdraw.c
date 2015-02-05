@@ -67,9 +67,6 @@ int xpdraw_CB(  XPLMDrawingPhase inPhase,
         return 1;
     }
 
-    if( XPUTIL_REF_POINT_CHANGED )
-        puts( "REF POINT CHANGED" );
-    
     if( xpdraw_DrawSceneCB != NULL )
         ( *xpdraw_DrawSceneCB )( );
 
