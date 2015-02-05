@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "xpdraw.h"
 #include "xpopengl.h"
-//#include "xpscene.h"        // hier das Headerfile der eigenen Perpare/Draw Funktionen
+#include "xputil.h"
 #include "xpinterface.h"    // hier hinein die Funktionsnamen für Prepare/Draw
 /*
     Alles, was zum Zeichnen in XPlane gehört soll hierhin
@@ -60,11 +60,16 @@ int xpdraw_CB(  XPLMDrawingPhase inPhase,
     if( first_call ) 
     {
         first_call = 0;
+
+        xputil_initRefPoint( );
         if( xpdraw_PrepareSceneCB != NULL )
             ( *xpdraw_PrepareSceneCB )( );
         return 1;
     }
 
+    if( XPUTIL_REF_POINT_CHANGED )
+        puts( "REF POINT CHANGED" );
+    
     if( xpdraw_DrawSceneCB != NULL )
         ( *xpdraw_DrawSceneCB )( );
 

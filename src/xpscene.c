@@ -66,6 +66,7 @@ void xpscene_prepare_triangle( void )
     
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
+
     return;
 } // xpscene_prepare_triangle
 
@@ -92,7 +93,7 @@ void xpscene_draw_triangle( void )
 
     glUseProgram(0);
     glBindVertexArray(0);
-    
+
     return;
 } // xpscene_draw_triangle
 
