@@ -26,7 +26,9 @@ PLUGIN_API int XPluginStart(char * outName,
     strcpy(outSig, "XP10 Shadertest");
     strcpy(outDesc, "mein zweiter XP Shader");
     xpdraw_init();
+    puts("##############################################################");
     puts("I'M ALIVE !!!!!!!!!!!!!");
+    puts("##############################################################");
 
     return 1;
 } /* XPluginStart */
@@ -42,7 +44,9 @@ PLUGIN_API int XPluginStart(char * outName,
 PLUGIN_API void XPluginStop(void)
 {
     xpopengl_destroy();
+    puts("##############################################################");
     puts("Bye bye XPlane");
+    puts("##############################################################");
 } /* XPluginStop */
 
 /*  =======================================================================
