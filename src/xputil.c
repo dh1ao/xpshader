@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 #include "XPLMDataAccess.h"
@@ -98,3 +99,56 @@ int xputil_FileExists(char *fname)
         return 0;
 
 } // xputil_FileExists
+
+/*  =======================================================================
+
+    xputil_ReadObjectFile
+
+    liest eine (Blender obj) Datei ein und legt die benötigten Puffer an
+
+    ======================================================================= */
+
+void xputil_ReadObjectFile( char *filename, double **vertex_buffer, int *vcount )
+{
+    if( ! xputil_FileExists( filename ) )
+    {
+        printf("Object File %s nicht gefunden\n", filename );
+        return;
+    }
+
+    FILE *f = fopen(filename, "rb");
+    char c='z';
+    float x,y,z;
+    double *buffer;
+    int count = 0;
+
+    buffer = ( double * )calloc( 1000, 3*sizeof( double ) );
+    while( ! feof( f ) ) 
+    {
+        fscanf( f, "%c %f %f %f\n", &c, &x, &y, &z);
+        if( c == 'f' )       
+            continue;
+            //printf("f %d %d %d\n", ( int )x, ( int )y, ( int )z);
+        if( c == 'v' )       
+        {   
+            if( count % 1000 == 0 )
+                buffer = ( double * ) realloc( buffer, 1000*3*sizeof( double ) );
+
+            *( buffer + count ) = x;
+            *( buffer + count + 1 ) = y;
+            *( buffer + count + 2 ) = z;
+            count++;
+            //printf("v %f %f %f\n", x, y, z);
+        }
+        else
+            continue;
+    }
+
+    *vertex_buffer = ( double * ) realloc( buffer, count*3*sizeof( double ) );
+    *vcount = count;
+    
+    fclose( f );
+    
+    return;
+
+} // xputil_ReadObjectFile
