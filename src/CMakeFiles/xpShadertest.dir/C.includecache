@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDataAccess.h
+XPLMDefs.h
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDefs.h
+
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDefs.h
+windows.h
+-
+stdint.h
+-
+
+/home/peter/Programming/xplane/xpshader/src/xputil.c
+unistd.h
+-
+stdio.h
+-
+stdlib.h
+-
+XPLMDataAccess.h
+/home/peter/Programming/xplane/xpshader/src/XPLMDataAccess.h
+xputil.h
+/home/peter/Programming/xplane/xpshader/src/xputil.h
+
+/home/peter/Programming/xplane/xpshader/src/xputil.h
+stdio.h
+-
+

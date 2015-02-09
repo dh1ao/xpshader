@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -g   -shared -Wl,-soname,libxpShadertest.so -o ../build/libxpShadertest.so CMakeFiles/xpShadertest.dir/xps.c.o CMakeFiles/xpShadertest.dir/xputil.c.o CMakeFiles/xpShadertest.dir/xpdraw.c.o CMakeFiles/xpShadertest.dir/xpopengl.c.o CMakeFiles/xpShadertest.dir/xpscene.c.o CMakeFiles/xpShadertest.dir/xppixel.c.o CMakeFiles/xpShadertest.dir/lodepng.c.o -lGL -lGLEW 
