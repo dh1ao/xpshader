@@ -58,9 +58,11 @@ void xpopengl_printGLErrors(void)
     xpopengl_init
 
     OpenGL und Shader initialisieren
+    wenn die beiden Parameter NULL sind, werden die Shader aus 
+    ./Resources/plugins geladen (dort dann vshader.glsl, fshader.glsl)
 
     ======================================================================= */
-void xpopengl_init(void)
+void xpopengl_init( char *vshader_filename, char *fshader_filename )
 {
 
     GLenum err = glewInit();
@@ -72,8 +74,18 @@ void xpopengl_init(void)
     fprintf(stdout, "Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
 
     /* Einlesen des Vertex- und Fragment Shader Programms */
-    char *vshader_text = xputil_ReadFile( XPOPENGL_VSHADER_FILE );
-    char *fshader_text = xputil_ReadFile( XPOPENGL_FSHADER_FILE );
+    char *vshader_text = NULL;
+    char *fshader_text = NULL;
+
+    if( vshader_filename == NULL )
+        vshader_text = xputil_ReadFile( XPOPENGL_VSHADER_FILE );
+    else
+        vshader_text = xputil_ReadFile( vshader_filename );
+
+    if( fshader_filename == NULL )
+        fshader_text = xputil_ReadFile( XPOPENGL_FSHADER_FILE );
+    else
+        fshader_text = xputil_ReadFile( fshader_filename );
 
     if (( ! vshader_text ) || ( ! fshader_text ))
     {

@@ -13,6 +13,8 @@ static XPLMDataRef XPUTIL_LatDataRef;
 static double XPUTIL_RefPositionLon;
 static double XPUTIL_RefPositionLat;
 
+
+#ifndef _NO_XPLANE
 /*  =======================================================================
 
     xputil_initRefPoint
@@ -52,7 +54,7 @@ short xputil_ReadRefPoint( void )
         return 0;
 
 } // xputil_ReadRefPoint
-
+#endif // _NO_XPLANE
 
 /*  =======================================================================
 

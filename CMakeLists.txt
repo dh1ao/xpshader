@@ -9,6 +9,10 @@ set(
     ${CMAKE_HOME_DIRECTORY}/build
     )
 
+set(
+    EXECUTABLE_OUTPUT_PATH 
+    ${CMAKE_HOME_DIRECTORY}/build )
+
 set(XP_SDK_INCLUDE_DIR
     /home/peter/Programming/xplane/sdk/CHeaders/XPLM/
     )

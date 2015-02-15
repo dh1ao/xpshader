@@ -102,6 +102,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/testbed.dir/rule:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/testbed.dir/rule
+.PHONY : src/CMakeFiles/testbed.dir/rule
+
+# Convenience name for target.
+testbed: src/CMakeFiles/testbed.dir/rule
+.PHONY : testbed
+
+# fast build rule for target.
+testbed/fast:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/build
+.PHONY : testbed/fast
+
+# Convenience name for target.
 src/CMakeFiles/xpShadertest.dir/rule:
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/xpShadertest.dir/rule
 .PHONY : src/CMakeFiles/xpShadertest.dir/rule
@@ -120,6 +134,7 @@ lodepng.o: lodepng.c.o
 
 # target to build an object file
 lodepng.c.o:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/lodepng.c.o
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/lodepng.c.o
 .PHONY : lodepng.c.o
 
@@ -128,6 +143,7 @@ lodepng.i: lodepng.c.i
 
 # target to preprocess a source file
 lodepng.c.i:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/lodepng.c.i
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/lodepng.c.i
 .PHONY : lodepng.c.i
 
@@ -136,8 +152,57 @@ lodepng.s: lodepng.c.s
 
 # target to generate assembly for a file
 lodepng.c.s:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/lodepng.c.s
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/lodepng.c.s
 .PHONY : lodepng.c.s
+
+testbed.o: testbed.c.o
+.PHONY : testbed.o
+
+# target to build an object file
+testbed.c.o:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed.c.o
+.PHONY : testbed.c.o
+
+testbed.i: testbed.c.i
+.PHONY : testbed.i
+
+# target to preprocess a source file
+testbed.c.i:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed.c.i
+.PHONY : testbed.c.i
+
+testbed.s: testbed.c.s
+.PHONY : testbed.s
+
+# target to generate assembly for a file
+testbed.c.s:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed.c.s
+.PHONY : testbed.c.s
+
+testbed_triangle.o: testbed_triangle.c.o
+.PHONY : testbed_triangle.o
+
+# target to build an object file
+testbed_triangle.c.o:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed_triangle.c.o
+.PHONY : testbed_triangle.c.o
+
+testbed_triangle.i: testbed_triangle.c.i
+.PHONY : testbed_triangle.i
+
+# target to preprocess a source file
+testbed_triangle.c.i:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed_triangle.c.i
+.PHONY : testbed_triangle.c.i
+
+testbed_triangle.s: testbed_triangle.c.s
+.PHONY : testbed_triangle.s
+
+# target to generate assembly for a file
+testbed_triangle.c.s:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed_triangle.c.s
+.PHONY : testbed_triangle.c.s
 
 xpdraw.o: xpdraw.c.o
 .PHONY : xpdraw.o
@@ -168,6 +233,7 @@ xpopengl.o: xpopengl.c.o
 
 # target to build an object file
 xpopengl.c.o:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/xpopengl.c.o
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/xpopengl.c.o
 .PHONY : xpopengl.c.o
 
@@ -176,6 +242,7 @@ xpopengl.i: xpopengl.c.i
 
 # target to preprocess a source file
 xpopengl.c.i:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/xpopengl.c.i
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/xpopengl.c.i
 .PHONY : xpopengl.c.i
 
@@ -184,6 +251,7 @@ xpopengl.s: xpopengl.c.s
 
 # target to generate assembly for a file
 xpopengl.c.s:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/xpopengl.c.s
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/xpopengl.c.s
 .PHONY : xpopengl.c.s
 
@@ -264,6 +332,7 @@ xputil.o: xputil.c.o
 
 # target to build an object file
 xputil.c.o:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/xputil.c.o
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/xputil.c.o
 .PHONY : xputil.c.o
 
@@ -272,6 +341,7 @@ xputil.i: xputil.c.i
 
 # target to preprocess a source file
 xputil.c.i:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/xputil.c.i
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/xputil.c.i
 .PHONY : xputil.c.i
 
@@ -280,6 +350,7 @@ xputil.s: xputil.c.s
 
 # target to generate assembly for a file
 xputil.c.s:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/xputil.c.s
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/xputil.c.s
 .PHONY : xputil.c.s
 
@@ -291,10 +362,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... testbed"
 	@echo "... xpShadertest"
 	@echo "... lodepng.o"
 	@echo "... lodepng.i"
 	@echo "... lodepng.s"
+	@echo "... testbed.o"
+	@echo "... testbed.i"
+	@echo "... testbed.s"
+	@echo "... testbed_triangle.o"
+	@echo "... testbed_triangle.i"
+	@echo "... testbed_triangle.s"
 	@echo "... xpdraw.o"
 	@echo "... xpdraw.i"
 	@echo "... xpdraw.s"
