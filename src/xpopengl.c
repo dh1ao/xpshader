@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "xpopengl.h"
+#include "lodepng.h"
 #include "xputil.h"
 
 /*
@@ -159,3 +160,55 @@ GLuint xpopengl_getShaderProgram(void)
 { 
     return XPOpenGL_ShaderProgram;
 } // xpopengl_getShaderProgram
+
+
+/*  =======================================================================
+    
+    xpopengl_loadTexture
+    
+    eine *.png als Textur einlesen, ggfs Breite/Höhe auf eine Potenz von 2
+    erweitern und der Graka übergeben. Rückgabewert ist die ID des Texturbuffers
+    ======================================================================= */
+GLuint xpopengl_loadTexture(const char* filename)
+{
+    GLuint textureID;
+    unsigned error;
+    unsigned char* image;
+    unsigned width, height;
+
+    error = lodepng_decode32_file( &image, &width, &height, filename );
+    if (error) 
+    {
+        printf("error %u: %s\n", error, lodepng_error_text(error));
+        return -1;
+    }
+
+    // CPU Texturpuffer ggfs. Breite/Hoehe an Potenz von 2 anpassen
+    size_t u2 = 1;
+    while ( u2 < width ) 
+        u2 *= 2;
+
+    size_t v2 = 1;
+    while ( v2 < height ) 
+        v2 *= 2;
+
+    unsigned char* image2 = malloc( u2 * v2 * 4 );
+    size_t y, x, c = 0;
+    for( y = 0; y < height; y++ )
+        for( x = 0; x < width; x++ )
+            for( c = 0; c < 4; c++ )
+            {
+                image2[ 4*u2*y + 4*x + c ] = image[ 4*width*y + 4*x + c ];
+            }
+
+    glEnable(GL_TEXTURE_2D);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glTexImage2D(GL_TEXTURE_2D, 0, 4, u2, v2, 0, GL_RGBA, GL_UNSIGNED_BYTE, &image2[0]);
+    glGenTextures(1, &textureID);
+    glBindTexture(GL_TEXTURE_2D, textureID);
+
+    free( image );
+    free( image2 );
+    return textureID;
+} // xpopengl_loadTexture
