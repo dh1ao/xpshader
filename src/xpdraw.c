@@ -19,7 +19,7 @@
 void xpdraw_init( void )
 {
     xpdraw_registerCB( );
-    xpopengl_init( );
+    xpopengl_init( NULL, NULL );
 
     /* die beiden Funktionen müssen dem Anwendungsfall nach registriert werden */
     xpdraw_registerPrepareScene( XPDRAW_PREPARE_CB );

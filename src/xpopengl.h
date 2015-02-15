@@ -13,7 +13,7 @@ static GLuint XPOpenGL_ShaderProgram;
 
 void xpopengl_printProgInfo(GLuint prog);
 void xpopengl_printGLErrors(void);
-void xpopengl_init(void);
+void xpopengl_init( char *vshader_filename, char *fshader_filename );
 void xpopengl_destroy(void);
 int xpopengl_num_of_extensions(void);
 void xpopengl_print_extensions(void);
@@ -23,7 +23,7 @@ GLuint xpopengl_loadTexture(const char* filename);
 #else
 extern void xpopengl_printProgInfo(GLuint prog);
 extern void xpopengl_printGLErrors(void);
-extern void xpopengl_init(void);
+void xpopengl_init( char *vshader_filename, char *fshader_filename );
 extern void xpopengl_destroy(void);
 extern int xpopengl_num_of_extensions(void);
 extern void xpopengl_print_extensions(void);
