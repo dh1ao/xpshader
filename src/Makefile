@@ -156,6 +156,54 @@ lodepng.c.s:
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/lodepng.c.s
 .PHONY : lodepng.c.s
 
+tb_pixel.o: tb_pixel.c.o
+.PHONY : tb_pixel.o
+
+# target to build an object file
+tb_pixel.c.o:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/tb_pixel.c.o
+.PHONY : tb_pixel.c.o
+
+tb_pixel.i: tb_pixel.c.i
+.PHONY : tb_pixel.i
+
+# target to preprocess a source file
+tb_pixel.c.i:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/tb_pixel.c.i
+.PHONY : tb_pixel.c.i
+
+tb_pixel.s: tb_pixel.c.s
+.PHONY : tb_pixel.s
+
+# target to generate assembly for a file
+tb_pixel.c.s:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/tb_pixel.c.s
+.PHONY : tb_pixel.c.s
+
+tb_triangle.o: tb_triangle.c.o
+.PHONY : tb_triangle.o
+
+# target to build an object file
+tb_triangle.c.o:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/tb_triangle.c.o
+.PHONY : tb_triangle.c.o
+
+tb_triangle.i: tb_triangle.c.i
+.PHONY : tb_triangle.i
+
+# target to preprocess a source file
+tb_triangle.c.i:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/tb_triangle.c.i
+.PHONY : tb_triangle.c.i
+
+tb_triangle.s: tb_triangle.c.s
+.PHONY : tb_triangle.s
+
+# target to generate assembly for a file
+tb_triangle.c.s:
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/tb_triangle.c.s
+.PHONY : tb_triangle.c.s
+
 testbed.o: testbed.c.o
 .PHONY : testbed.o
 
@@ -179,30 +227,6 @@ testbed.s: testbed.c.s
 testbed.c.s:
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed.c.s
 .PHONY : testbed.c.s
-
-testbed_triangle.o: testbed_triangle.c.o
-.PHONY : testbed_triangle.o
-
-# target to build an object file
-testbed_triangle.c.o:
-	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed_triangle.c.o
-.PHONY : testbed_triangle.c.o
-
-testbed_triangle.i: testbed_triangle.c.i
-.PHONY : testbed_triangle.i
-
-# target to preprocess a source file
-testbed_triangle.c.i:
-	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed_triangle.c.i
-.PHONY : testbed_triangle.c.i
-
-testbed_triangle.s: testbed_triangle.c.s
-.PHONY : testbed_triangle.s
-
-# target to generate assembly for a file
-testbed_triangle.c.s:
-	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/testbed_triangle.c.s
-.PHONY : testbed_triangle.c.s
 
 xpdraw.o: xpdraw.c.o
 .PHONY : xpdraw.o
@@ -367,12 +391,15 @@ help:
 	@echo "... lodepng.o"
 	@echo "... lodepng.i"
 	@echo "... lodepng.s"
+	@echo "... tb_pixel.o"
+	@echo "... tb_pixel.i"
+	@echo "... tb_pixel.s"
+	@echo "... tb_triangle.o"
+	@echo "... tb_triangle.i"
+	@echo "... tb_triangle.s"
 	@echo "... testbed.o"
 	@echo "... testbed.i"
 	@echo "... testbed.s"
-	@echo "... testbed_triangle.o"
-	@echo "... testbed_triangle.i"
-	@echo "... testbed_triangle.s"
 	@echo "... xpdraw.o"
 	@echo "... xpdraw.i"
 	@echo "... xpdraw.s"

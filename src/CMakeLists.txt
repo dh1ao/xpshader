@@ -10,6 +10,6 @@ ADD_CUSTOM_COMMAND(TARGET xpShadertest POST_BUILD
 target_link_libraries(xpShadertest GL GLEW )
 
 #add_definitions( -D_NO_XPLANE )
-add_executable(testbed testbed.c xpopengl.c lodepng.c xputil.c testbed_triangle.c )
+add_executable(testbed testbed.c xpopengl.c lodepng.c xputil.c tb_pixel.c tb_triangle.c)
 target_compile_definitions(testbed PUBLIC "_NO_XPLANE=1")
 target_link_libraries(testbed glut GL GLEW )
