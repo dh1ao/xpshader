@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDataAccess.h
+XPLMDefs.h
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDefs.h
+
 /home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDefs.h
 windows.h
 -
@@ -15,6 +19,20 @@ stdint.h
 /home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDisplay.h
 XPLMDefs.h
 /home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDefs.h
+
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMPlugin.h
+XPLMDefs.h
+/home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDefs.h
+
+/home/peter/Programming/xplane/xpshader/src/lodepng.c
+lodepng.h
+/home/peter/Programming/xplane/xpshader/src/lodepng.h
+stdio.h
+-
+stdlib.h
+-
+fstream
+-
 
 /home/peter/Programming/xplane/xpshader/src/lodepng.h
 string.h
@@ -88,6 +106,18 @@ xputil.h
 xpopengl.h
 /home/peter/Programming/xplane/xpshader/src/xpopengl.h
 
+/home/peter/Programming/xplane/xpshader/src/xps.c
+stdio.h
+-
+string.h
+-
+XPLMPlugin.h
+/home/peter/Programming/xplane/xpshader/src/XPLMPlugin.h
+xputil.h
+/home/peter/Programming/xplane/xpshader/src/xputil.h
+xpdraw.h
+/home/peter/Programming/xplane/xpshader/src/xpdraw.h
+
 /home/peter/Programming/xplane/xpshader/src/xpscene.c
 stdlib.h
 -
@@ -101,6 +131,18 @@ xpopengl.h
 /home/peter/Programming/xplane/xpshader/src/xpopengl.h
 stdio.h
 -
+
+/home/peter/Programming/xplane/xpshader/src/xputil.c
+unistd.h
+-
+stdio.h
+-
+stdlib.h
+-
+XPLMDataAccess.h
+/home/peter/Programming/xplane/xpshader/src/XPLMDataAccess.h
+xputil.h
+/home/peter/Programming/xplane/xpshader/src/xputil.h
 
 /home/peter/Programming/xplane/xpshader/src/xputil.h
 stdio.h
