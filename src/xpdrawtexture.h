@@ -17,7 +17,8 @@ static GLuint eab = -1;
 
 void xpdrawtexture_prepare(void);
 void xpdrawtexture_draw(void);
-GLuint loadTexture(const char* filename);
+//GLuint loadTexture(const char* filename);
+GLuint loadTexture(const char *filename, unsigned id, unsigned size);
 
 #else
 

@@ -14,6 +14,11 @@ src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: src/xpinterface.h
 src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: src/xpopengl.h
 src/CMakeFiles/xpShadertest.dir/xpdraw.c.o: src/xputil.h
 
+src/CMakeFiles/xpShadertest.dir/xpdrawtexture.c.o: src/lodepng.h
+src/CMakeFiles/xpShadertest.dir/xpdrawtexture.c.o: src/xpdrawtexture.c
+src/CMakeFiles/xpShadertest.dir/xpdrawtexture.c.o: src/xpdrawtexture.h
+src/CMakeFiles/xpShadertest.dir/xpdrawtexture.c.o: src/xpopengl.h
+src/CMakeFiles/xpShadertest.dir/xpdrawtexture.c.o: src/xputil.h
 
 src/CMakeFiles/xpShadertest.dir/xpopengl.c.o: src/xpopengl.c
 src/CMakeFiles/xpShadertest.dir/xpopengl.c.o: src/xpopengl.h

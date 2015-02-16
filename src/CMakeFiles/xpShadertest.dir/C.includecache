@@ -64,6 +64,18 @@ xpinterface.h
 XPLMDisplay.h
 /home/markus/Programming/github/xpshader/src/XPLMDisplay.h
 
+/home/markus/Programming/github/xpshader/src/xpdrawtexture.c
+xpdrawtexture.h
+/home/markus/Programming/github/xpshader/src/xpdrawtexture.h
+xputil.h
+/home/markus/Programming/github/xpshader/src/xputil.h
+xpopengl.h
+/home/markus/Programming/github/xpshader/src/xpopengl.h
+stdlib.h
+-
+math.h
+-
+
 /home/markus/Programming/github/xpshader/src/xpdrawtexture.h
 xpopengl.h
 /home/markus/Programming/github/xpshader/src/xpopengl.h
