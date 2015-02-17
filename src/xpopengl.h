@@ -19,16 +19,19 @@ int xpopengl_num_of_extensions(void);
 void xpopengl_print_extensions(void);
 GLuint xpopengl_getShaderProgram(void);
 GLuint xpopengl_loadTexture(const char* filename);
+void xpopengl_printOpenGLInfo( void );
 
 #else
+
 extern void xpopengl_printProgInfo(GLuint prog);
 extern void xpopengl_printGLErrors(void);
-void xpopengl_init( char *vshader_filename, char *fshader_filename );
+extern void xpopengl_init( char *vshader_filename, char *fshader_filename );
 extern void xpopengl_destroy(void);
 extern int xpopengl_num_of_extensions(void);
 extern void xpopengl_print_extensions(void);
 extern GLuint xpopengl_getShaderProgram(void);
 extern GLuint xpopengl_loadTexture(const char* filename);
+extern void xpopengl_printOpenGLInfo( void );
 #endif // XPOPENGL_H
 
 #define BUFFER_OFFSET(i) ((void*)(i))

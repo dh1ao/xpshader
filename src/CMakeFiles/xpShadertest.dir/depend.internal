@@ -4,6 +4,9 @@
 src/CMakeFiles/xpShadertest.dir/lodepng.c.o
  /home/peter/Programming/xplane/xpshader/src/lodepng.c
  /home/peter/Programming/xplane/xpshader/src/lodepng.h
+src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o
+ /home/peter/Programming/xplane/xpshader/src/tb_triangle.c
+ /home/peter/Programming/xplane/xpshader/src/xpopengl.h
 src/CMakeFiles/xpShadertest.dir/xpdraw.c.o
  /home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDefs.h
  /home/peter/Programming/xplane/sdk/CHeaders/XPLM/XPLMDisplay.h

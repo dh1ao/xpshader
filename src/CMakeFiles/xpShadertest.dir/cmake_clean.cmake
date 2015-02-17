@@ -6,6 +6,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/xpShadertest.dir/xpscene.c.o"
   "CMakeFiles/xpShadertest.dir/xppixel.c.o"
   "CMakeFiles/xpShadertest.dir/lodepng.c.o"
+  "CMakeFiles/xpShadertest.dir/tb_triangle.c.o"
   "../build/libxpShadertest.pdb"
   "../build/libxpShadertest.so"
 )

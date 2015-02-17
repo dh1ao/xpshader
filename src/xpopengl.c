@@ -224,3 +224,18 @@ GLuint xpopengl_loadTexture(const char* filename)
     free( image2 );
     return textureID;
 } // xpopengl_loadTexture
+
+/*  =======================================================================
+    
+    xpopengl_printOpenGLInfo
+    
+    Welcher Hersteller, Version etc.
+    ======================================================================= */
+
+void xpopengl_printOpenGLInfo( void )
+{
+    printf( "Hersteller %s\n", glGetString( GL_VENDOR ) );
+    printf( "GPU  %s\n", glGetString( GL_RENDERER ) );
+    printf( "Treiber Version %s\n", glGetString( GL_VERSION ) );
+
+} // xpopengl_printOpenGLInfo

@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
   "/home/peter/Programming/xplane/xpshader/src/lodepng.c" "/home/peter/Programming/xplane/xpshader/src/CMakeFiles/xpShadertest.dir/lodepng.c.o"
+  "/home/peter/Programming/xplane/xpshader/src/tb_triangle.c" "/home/peter/Programming/xplane/xpshader/src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o"
   "/home/peter/Programming/xplane/xpshader/src/xpdraw.c" "/home/peter/Programming/xplane/xpshader/src/CMakeFiles/xpShadertest.dir/xpdraw.c.o"
   "/home/peter/Programming/xplane/xpshader/src/xpopengl.c" "/home/peter/Programming/xplane/xpshader/src/CMakeFiles/xpShadertest.dir/xpopengl.c.o"
   "/home/peter/Programming/xplane/xpshader/src/xppixel.c" "/home/peter/Programming/xplane/xpshader/src/CMakeFiles/xpShadertest.dir/xppixel.c.o"

@@ -5,6 +5,7 @@ extern void testbedtriangle_prepare( void );
 extern void testbedtriangle_draw( void );
 extern void tb_tri_prepapre( void );
 extern void tb_tri_draw( void );
+extern void tb_tri_idle( void );
 
 #define TESTBED_PREPARE_CB tb_tri_prepapre
 #define TESTBED_DRAW_CB tb_tri_draw

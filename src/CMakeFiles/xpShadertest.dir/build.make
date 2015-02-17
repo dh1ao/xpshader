@@ -213,6 +213,29 @@ src/CMakeFiles/xpShadertest.dir/lodepng.c.o.provides: src/CMakeFiles/xpShadertes
 
 src/CMakeFiles/xpShadertest.dir/lodepng.c.o.provides.build: src/CMakeFiles/xpShadertest.dir/lodepng.c.o
 
+src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o: src/CMakeFiles/xpShadertest.dir/flags.make
+src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o: src/tb_triangle.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/Programming/xplane/xpshader/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o"
+	cd /home/peter/Programming/xplane/xpshader/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/xpShadertest.dir/tb_triangle.c.o   -c /home/peter/Programming/xplane/xpshader/src/tb_triangle.c
+
+src/CMakeFiles/xpShadertest.dir/tb_triangle.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xpShadertest.dir/tb_triangle.c.i"
+	cd /home/peter/Programming/xplane/xpshader/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/peter/Programming/xplane/xpshader/src/tb_triangle.c > CMakeFiles/xpShadertest.dir/tb_triangle.c.i
+
+src/CMakeFiles/xpShadertest.dir/tb_triangle.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xpShadertest.dir/tb_triangle.c.s"
+	cd /home/peter/Programming/xplane/xpshader/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/peter/Programming/xplane/xpshader/src/tb_triangle.c -o CMakeFiles/xpShadertest.dir/tb_triangle.c.s
+
+src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o.requires:
+.PHONY : src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o.requires
+
+src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o.provides: src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o.requires
+	$(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o.provides.build
+.PHONY : src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o.provides
+
+src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o.provides.build: src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o
+
 # Object files for target xpShadertest
 xpShadertest_OBJECTS = \
 "CMakeFiles/xpShadertest.dir/xps.c.o" \
@@ -221,7 +244,8 @@ xpShadertest_OBJECTS = \
 "CMakeFiles/xpShadertest.dir/xpopengl.c.o" \
 "CMakeFiles/xpShadertest.dir/xpscene.c.o" \
 "CMakeFiles/xpShadertest.dir/xppixel.c.o" \
-"CMakeFiles/xpShadertest.dir/lodepng.c.o"
+"CMakeFiles/xpShadertest.dir/lodepng.c.o" \
+"CMakeFiles/xpShadertest.dir/tb_triangle.c.o"
 
 # External object files for target xpShadertest
 xpShadertest_EXTERNAL_OBJECTS =
@@ -233,6 +257,7 @@ build/libxpShadertest.so: src/CMakeFiles/xpShadertest.dir/xpopengl.c.o
 build/libxpShadertest.so: src/CMakeFiles/xpShadertest.dir/xpscene.c.o
 build/libxpShadertest.so: src/CMakeFiles/xpShadertest.dir/xppixel.c.o
 build/libxpShadertest.so: src/CMakeFiles/xpShadertest.dir/lodepng.c.o
+build/libxpShadertest.so: src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o
 build/libxpShadertest.so: src/CMakeFiles/xpShadertest.dir/build.make
 build/libxpShadertest.so: src/CMakeFiles/xpShadertest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../build/libxpShadertest.so"
@@ -251,6 +276,7 @@ src/CMakeFiles/xpShadertest.dir/requires: src/CMakeFiles/xpShadertest.dir/xpopen
 src/CMakeFiles/xpShadertest.dir/requires: src/CMakeFiles/xpShadertest.dir/xpscene.c.o.requires
 src/CMakeFiles/xpShadertest.dir/requires: src/CMakeFiles/xpShadertest.dir/xppixel.c.o.requires
 src/CMakeFiles/xpShadertest.dir/requires: src/CMakeFiles/xpShadertest.dir/lodepng.c.o.requires
+src/CMakeFiles/xpShadertest.dir/requires: src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o.requires
 .PHONY : src/CMakeFiles/xpShadertest.dir/requires
 
 src/CMakeFiles/xpShadertest.dir/clean:

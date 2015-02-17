@@ -186,6 +186,7 @@ tb_triangle.o: tb_triangle.c.o
 # target to build an object file
 tb_triangle.c.o:
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/tb_triangle.c.o
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/tb_triangle.c.o
 .PHONY : tb_triangle.c.o
 
 tb_triangle.i: tb_triangle.c.i
@@ -194,6 +195,7 @@ tb_triangle.i: tb_triangle.c.i
 # target to preprocess a source file
 tb_triangle.c.i:
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/tb_triangle.c.i
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/tb_triangle.c.i
 .PHONY : tb_triangle.c.i
 
 tb_triangle.s: tb_triangle.c.s
@@ -202,6 +204,7 @@ tb_triangle.s: tb_triangle.c.s
 # target to generate assembly for a file
 tb_triangle.c.s:
 	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/testbed.dir/build.make src/CMakeFiles/testbed.dir/tb_triangle.c.s
+	cd /home/peter/Programming/xplane/xpshader && $(MAKE) -f src/CMakeFiles/xpShadertest.dir/build.make src/CMakeFiles/xpShadertest.dir/tb_triangle.c.s
 .PHONY : tb_triangle.c.s
 
 testbed.o: testbed.c.o
